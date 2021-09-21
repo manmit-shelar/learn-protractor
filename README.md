@@ -6,8 +6,6 @@ Tutorials contains
   1. Basics of JavaScript.
   2. Basics of TypeScript.
   3. Interaction with different WebElements.
-  4. Protractor with Page Object Model (POM)
-  5. Reporting in Protractor
   
 # Testing practice site
 Tutorials have used practice below sites
