@@ -1,0 +1,6 @@
+Run Protractor Plugin Setup 
+    01. Install "Run Protractor" plugin in VS COde.
+    02. Create 'protractor.conf.js' file at root level.
+    03. Copy contains of 'conf.js' file to 'protractor.conf.js'.
+    04. Set specs: [''] in 'protractor.conf.js'.
+    05. Now click "Run Tests" or "Run Test" in test spec file.

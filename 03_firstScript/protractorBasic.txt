@@ -1,0 +1,31 @@
+01. Protractor Setup
+    Pre-requisite= Install Node and VS Code
+    01. Install = npm install -g protractor
+    02. Install drivers = webdriver-manager update
+    03. Start Selenium Server = webdriver-manager start
+
+02. Test Structure
+    01. 'spec' file = Test case file. It is same as class file in Java.
+    02. 'describe' block = It is the test suite inside each spec file.
+    03. 'it' block = It is test case block inside each 'describe' block.
+
+    Project Folder
+        |_spec.js (Test case file)
+            |_describe (Test suite)
+                |_it (Test case)
+        |_conf.js
+
+03. Configuration file
+    01. The configuration tells Protractor where your test files (specs) are, and where to talk to your Selenium Server (seleniumAddress). 
+    02. It will use the defaults for all other configuration. Chrome is the default browser.
+    03. conf.js contents
+        exports.config = {
+            framework: 'jasmine',   //We will use jasmine test framework with Protractor. It is same as TestNG, Junit in Java.
+            seleniumAddress: 'http://localhost:4444/wd/hub',    //Location of where to listen too Selenium server.
+            //directConnect: true,   //Instead of starting server first and then using it, we can use directConnect to open Chrome browser before each test execution.
+            specs: ['todo-spec.js']     //Details if spec file to execute should be specified in this array.
+        };
+
+04. Run Test
+    01. Traverse to project folder where script/spec files are located.
+    02. Hit command 'protractor conf.js'.
